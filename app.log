@@ -1,0 +1,63 @@
+2025-02-15 09:44:29.230  INFO 12804 --- [main] com.example.Calculator.Calculator_Main   : Starting Calculator_Main using Java 1.8.0_211 on bandarisandeep with PID 12804 (C:\Users\sande\Downloads\Calculator\Calculator\target\classes started by sande in C:\Users\sande\Downloads\Calculator\Calculator)
+2025-02-15 09:44:29.238 DEBUG 12804 --- [main] com.example.Calculator.Calculator_Main   : Running with Spring Boot v2.7.18, Spring v5.3.31
+2025-02-15 09:44:29.239  INFO 12804 --- [main] com.example.Calculator.Calculator_Main   : No active profile set, falling back to 1 default profile: "default"
+2025-02-15 09:44:30.971  INFO 12804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-02-15 09:44:30.972  INFO 12804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+2025-02-15 09:44:31.165  INFO 12804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-02-15 09:44:31.432 DEBUG 12804 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2025-02-15 09:44:31.458  INFO 12804 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-15 09:44:31.524  INFO 12804 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2025-02-15 09:44:31.766  INFO 12804 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-02-15 09:44:31.899  INFO 12804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-15 09:44:32.429  INFO 12804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-15 09:44:32.465  INFO 12804 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-02-15 09:44:33.196  INFO 12804 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-02-15 09:44:33.205  INFO 12804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-15 09:44:33.387 DEBUG 12804 --- [main] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2025-02-15 09:44:33.455 DEBUG 12804 --- [main] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2025-02-15 09:44:33.551 DEBUG 12804 --- [main] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2025-02-15 09:44:33.649  WARN 12804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-15 09:44:34.048  INFO 12804 --- [main] com.example.Calculator.Calculator_Main   : Started Calculator_Main in 5.216 seconds (JVM running for 5.621)
+2025-02-15 09:44:34.052  INFO 12804 --- [main] com.example.Calculator.Calculator_Main   : Calculator app is Started Successfully.
+2025-02-15 09:45:32.209  INFO 12804 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-15 09:45:32.327 DEBUG 12804 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-02-15 09:45:32.625  WARN 12804 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'double'; nested exception is java.lang.NumberFormatException: For input string: "1000?value2=500"]
+2025-02-15 09:45:32.633 DEBUG 12804 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-02-15 09:45:32.659 DEBUG 12804 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-02-15 09:45:32.837 DEBUG 12804 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-02-15 09:47:07.862 DEBUG 12804 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-02-15 09:47:07.865  INFO 12804 --- [http-nio-8080-exec-3] com.example.Calculator.C_controller      : GET request received for operation: sub, value1: 1000.0, value2: 500.0
+2025-02-15 09:47:07.865  INFO 12804 --- [http-nio-8080-exec-3] com.example.Calculator.Calculation       : Performing operation:sub with value1:1000.0 and value2:500.0
+2025-02-15 09:47:07.865 DEBUG 12804 --- [http-nio-8080-exec-3] com.example.Calculator.Calculation       : Substraction result:500.0
+2025-02-15 09:47:07.865  INFO 12804 --- [http-nio-8080-exec-3] com.example.Calculator.Calculation       : Saving result to database: com.example.Calculator.CalculationEntity@4c1c2c03
+2025-02-15 09:47:07.887 DEBUG 12804 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(303429030<open>)] for JPA transaction
+2025-02-15 09:47:07.887 DEBUG 12804 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2025-02-15 09:47:07.904 DEBUG 12804 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@36067421]
+2025-02-15 09:47:08.004 DEBUG 12804 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into calculation_entity (operationtype, result, value1, value2) values (?, ?, ?, ?)
+2025-02-15 09:47:08.029 TRACE 12804 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [sub]
+2025-02-15 09:47:08.029 TRACE 12804 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DOUBLE] - [500.0]
+2025-02-15 09:47:08.029 TRACE 12804 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DOUBLE] - [1000.0]
+2025-02-15 09:47:08.029 TRACE 12804 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [DOUBLE] - [500.0]
+2025-02-15 09:47:08.092 DEBUG 12804 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2025-02-15 09:47:08.094 DEBUG 12804 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(303429030<open>)]
+2025-02-15 09:47:08.119 DEBUG 12804 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2025-02-15 09:47:08.119  INFO 12804 --- [http-nio-8080-exec-3] com.example.Calculator.C_controller      : Operation result: com.example.Calculator.CalculationEntity@4c1c2c03
+2025-02-15 09:47:08.276 DEBUG 12804 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-02-15 09:48:27.301 DEBUG 12804 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-02-15 09:48:27.305  INFO 12804 --- [http-nio-8080-exec-8] com.example.Calculator.C_controller      : GET request received for operation: sub, value1: 100.0, value2: 50.0
+2025-02-15 09:48:27.306  INFO 12804 --- [http-nio-8080-exec-8] com.example.Calculator.Calculation       : Performing operation:sub with value1:100.0 and value2:50.0
+2025-02-15 09:48:27.308 DEBUG 12804 --- [http-nio-8080-exec-8] com.example.Calculator.Calculation       : Substraction result:50.0
+2025-02-15 09:48:27.308  INFO 12804 --- [http-nio-8080-exec-8] com.example.Calculator.Calculation       : Saving result to database: com.example.Calculator.CalculationEntity@100b2927
+2025-02-15 09:48:27.308 DEBUG 12804 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(516736342<open>)] for JPA transaction
+2025-02-15 09:48:27.308 DEBUG 12804 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2025-02-15 09:48:27.310 DEBUG 12804 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1af34257]
+2025-02-15 09:48:27.313 DEBUG 12804 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : insert into calculation_entity (operationtype, result, value1, value2) values (?, ?, ?, ?)
+2025-02-15 09:48:27.313 TRACE 12804 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [sub]
+2025-02-15 09:48:27.313 TRACE 12804 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [DOUBLE] - [50.0]
+2025-02-15 09:48:27.313 TRACE 12804 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DOUBLE] - [100.0]
+2025-02-15 09:48:27.313 TRACE 12804 --- [http-nio-8080-exec-8] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [DOUBLE] - [50.0]
+2025-02-15 09:48:27.313 DEBUG 12804 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2025-02-15 09:48:27.313 DEBUG 12804 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(516736342<open>)]
+2025-02-15 09:48:27.331 DEBUG 12804 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2025-02-15 09:48:27.331  INFO 12804 --- [http-nio-8080-exec-8] com.example.Calculator.C_controller      : Operation result: com.example.Calculator.CalculationEntity@100b2927
+2025-02-15 09:48:27.331 DEBUG 12804 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
