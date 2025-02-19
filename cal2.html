@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CORS Test</title>
+</head>
+<body>
+    <button onclick="testCors()">Test CORS</button>
+    <script>
+        async function testCors() {
+            try {
+                const response = await fetch('http://localhost:8080/calculator/add?value1=10&value2=20', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+                const result = await response.json();
+                console.log('Result:', result);
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+    </script>
+</body>
+</html>
