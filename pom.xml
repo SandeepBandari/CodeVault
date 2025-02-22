@@ -8,6 +8,31 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
+		<version>3.5.0-SNAPSHOT</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>Spring_Sec</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Spring_Sec</name>
+	<description>Demo project for Spring Boot</description>
+	<url/>
+	<licenses>
+		<license/>
+	</licenses>
+	<developers>
+		<developer/>
+	</developers>
+	<scm>
+		<connection/>
+		<developerConnection/>
+		<tag/>
+		<url/>
+	</scm>
+	<properties>
+		<java.version>17</java.version>
+=======
 		<version>2.7.18</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
@@ -20,6 +45,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+>>>>>>> 44b10045e483d5267819b31b5e02b7a2066f181f
 	</properties>
 
 	<dependencies>
@@ -27,7 +53,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+=======
+		
+>>>>>>> 44b10045e483d5267819b31b5e02b7a2066f181f
+>>>>>>> 0751c2db46c98b5f78be096daffc92e0cd3937f7
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -44,11 +81,22 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+=======
+<<<<<<< HEAD
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+=======
+>>>>>>> 44b10045e483d5267819b31b5e02b7a2066f181f
+>>>>>>> 0751c2db46c98b5f78be096daffc92e0cd3937f7
 	</dependencies>
 
 	<build>
@@ -56,6 +104,47 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+<<<<<<< HEAD
+			</plugin>
+		</plugins>
+	</build>
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots</name>
+			<url>https://repo.spring.io/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+=======
 				<configuration>
 					<image>
 						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
@@ -64,5 +153,6 @@
 			</plugin>
 		</plugins>
 	</build>
+>>>>>>> 44b10045e483d5267819b31b5e02b7a2066f181f
 
 </project>
