@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #0000001a;
+    width: 300px;
+    text-align: center;
+}
+
+.signup-container h2 {
+    margin: 0 0 20px;
+    color: #ed6713;
+}
+
+.signup-container .uname input[type="text"], .signup-container .pw input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #f17c1c;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.signup-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.loginlink {
+    margin-top: 20px;
+}
+
+.loginlink a {
+    color: #269ff5;
+    text-decoration: none;
+}
+
+.loginlink a:hover {
+    text-decoration: underline;
+}

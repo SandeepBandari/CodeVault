@@ -5,6 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+<<<<<<< HEAD
 		<version>3.5.0-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
@@ -28,16 +29,32 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+=======
+		<version>2.7.18</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.example</groupId>
+	<artifactId>Calculator</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Calculator</name>
+	<description>Calculator Project</description>
+	<properties>
+		<java.version>1.8</java.version>
+>>>>>>> 44b10045e483d5267819b31b5e02b7a2066f181f
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+=======
+		
+>>>>>>> 44b10045e483d5267819b31b5e02b7a2066f181f
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -53,11 +70,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+=======
+>>>>>>> 44b10045e483d5267819b31b5e02b7a2066f181f
 	</dependencies>
 
 	<build>
@@ -65,6 +85,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+<<<<<<< HEAD
 			</plugin>
 		</plugins>
 	</build>
@@ -104,5 +125,15 @@
 			</releases>
 		</pluginRepository>
 	</pluginRepositories>
+=======
+				<configuration>
+					<image>
+						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
+					</image>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+>>>>>>> 44b10045e483d5267819b31b5e02b7a2066f181f
 
 </project>
