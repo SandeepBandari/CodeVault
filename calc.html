@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calc</title>
+    <link rel="stylesheet" href="cal2css.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Calc</h1>
+        <div class="user-info">
+            <span id="username"></span>
+            <span id="user-role"></span>
+        </div>
+    </header>
+
+    <!-- Calculator -->
+    <div class="calc">
+        <div class="display" id="display"></div>
+        <div class="Buttons">
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="del()" class="dele">DEL</button>
+            <button onclick="prs_key('/')" class="divs">/</button>
+            <button onclick="prs_key('*')" class="mult">*</button>
+            <button onclick="prs_key('7')">7</button>
+            <button onclick="prs_key('8')">8</button>
+            <button onclick="prs_key('9')">9</button>
+            <button onclick="prs_key('-')" class="minu">-</button>
+            <button onclick="prs_key('4')">4</button>
+            <button onclick="prs_key('5')">5</button>
+            <button onclick="prs_key('6')">6</button>
+            <button onclick="prs_key('+')" class="addi">+</button>
+            <button onclick="prs_key('1')">1</button>
+            <button onclick="prs_key('2')">2</button>
+            <button onclick="prs_key('3')">3</button>
+            <button onclick="prs_key('%')" class="modu">%</button>
+            <button onclick="showHistory()" class="history-btn">Session History</button>
+            <button onclick="prs_key('0')">0</button>
+            <button onclick="prs_key('.')" class="dot">.</button>
+            <button onclick="calculate()" class="equals">=</button>
+            <button onclick="Get_History()" class="h2">Database History</button>
+        </div>
+    </div>
+
+    <!-- Logout Button -->
+    <div class="logout-container">
+        <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
